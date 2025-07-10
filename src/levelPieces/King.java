@@ -5,15 +5,16 @@ import gameEngine.InteractionResult;
 
 public class King extends GamePiece {
 
-	public King(char symbol, String label, int location) {
-		super(symbol, label, location);
-		// TODO Auto-generated constructor stub
+	public King(int location) {
+		super('K', "King", location);
 	}
 
 	@Override
 	public InteractionResult interact(Drawable[] gameBoard, int playerLocation) {
-		// TODO Auto-generated method stub
-		return null;
+		if (getLocation() == playerLocation) {
+			return InteractionResult.ADVANCE;
+		}
+		return InteractionResult.NONE;
 	}
 
 }
