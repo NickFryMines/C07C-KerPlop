@@ -31,7 +31,7 @@ public class Archer extends GamePiece implements Moveable {
 		if (directionModifier * movementSequence[nextMove] < 0) {
 			occupiedSpaceAdjustDirection = -1;
 		}
-		while (0 > newLocation || newLocation > gameBoard.length || (gameBoard[newLocation] != null && newLocation != getLocation())) {
+		while (0 > newLocation || newLocation >= gameBoard.length || (gameBoard[newLocation] != null && newLocation != getLocation())) {
 			if (0 > newLocation) {
 				occupiedSpaceAdjustDirection = 1;
 				newLocation += occupiedSpaceAdjustDirection;
