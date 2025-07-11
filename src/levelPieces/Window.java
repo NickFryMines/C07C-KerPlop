@@ -1,5 +1,12 @@
 package levelPieces;
 
+/**
+ * 
+ * @author Nick Fry
+ * @author Wesley Montgomery
+ * 
+ */
+
 import gameEngine.Drawable;
 
 public class Window implements Drawable {
