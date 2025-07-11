@@ -1,0 +1,77 @@
+GamePieces.txt
+Authors:
+- Wesley Montgomery and Nick Fry
+
+Game Piece Descriptions for KerPlop
+
+1. Archer
+- Extends: GamePiece
+- Implements: Moveable
+- InteractionResult: Will HIT the player if on same square as the player
+- Movement: Moves left and right using the pattern {-1, 1, -1, 1, 1}
+- Notes: Moves in a repeating sequence every turn.
+
+2. Guard
+- Extends: GamePiece
+- Implements: Moveable
+- InteractionResult: Will HIT the player if on same square as the player
+- Movement: Randomly chooses to move left or right by 1 step
+- Notes: Introduces luck based challenge due to random motion.
+
+3. King
+- Extends: GamePiece
+- Implements: (none)
+- InteractionResult: Will ADVANCE the player if the player lands on its location
+- Movement: Static
+- Notes: Reaching this piece allows the player to advance a level.
+
+4. Door
+- Extends: GamePiece
+- Implements: (none)
+- InteractionResult: Randomized with probabilites being 45% GET_POINT, 5% ADVANCE, and 55% HIT
+- Movement: Static
+- Notes: Interaction result chosen by weighted random probability. Can advance early if lucky enough. 
+
+5. Room
+- Extends: GamePiece
+- Implements: (none)
+- InteractionResult: Randomized with probabilites being 20% HIT, 20% GET_POINT, 5% KILL, and 55% NONE
+- Movement: Static
+- Notes: Interaction result chosen by weighted random probability. Can KILL if unlucky enough.
+
+6. Window
+- Implements: Drawable
+- InteractionResult: Will show a beautify W representing a wonderful, wacky, whimsical, waterproof window.
+- Movement: Static
+- Notes: Surves as a decoratation. Only a visual element for players theorize about. Might be explored in the sequel.
+
+Level Setup Summary:
+- 2 levels defined using a character-to-piece mapping system
+- Levels defined in `LevelSetup.java` using hardcoded layouts:
+    Level 1: "_A_____DRWD__G___K___"
+    Level 2: "KG_RD__D__R__G_______"
+
+Requirements Completed:
+1. At least 5 interactive pieces implemented
+2. All required `InteractionResult` types are used:
+	- HIT used by Archer, Guard, Door, and Room
+    - GET_POINT used by Door and Room
+    - KILL used by Room
+    - ADVANCE used by King and Door
+    - NONE (Window, Room sometimes)
+3. At least 2 pieces implement Moveable: 
+	- Archer
+	- Guard
+4. Different move algorithms:
+	- Archer uses deterministic pattern
+	- Guard uses randomness
+5. At most 3 pieces interact only on same square.
+6. Door and Room provide distance interaction with a probabilistic design.
+7. Window is purely Drawable.
+8. Two levels have been implemented.
+
+
+
+
+
+	
