@@ -1,10 +1,16 @@
 package levelPieces;
 
-import java.util.Map;
-import java.util.Random;
+/**
+ * 
+ * @author Nick Fry
+ * @author Wesley Montgomery
+ * 
+ */
 
 import gameEngine.Drawable;
 import gameEngine.InteractionResult;
+import java.util.Map;
+import java.util.Random;
 
 public class Door extends GamePiece {
 	private static final Map<InteractionResult, Integer> WEIGHTED_INTERACTION_PROBABILITY = Map.of(InteractionResult.ADVANCE, 5, InteractionResult.GET_POINT, 45, InteractionResult.HIT, 55);
