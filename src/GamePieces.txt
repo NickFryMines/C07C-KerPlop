@@ -7,42 +7,46 @@ Game Piece Descriptions for KerPlop
 1. Archer
 - Extends: GamePiece
 - Implements: Moveable
-- InteractionResult: Will HIT the player if on same square as the player
-- Movement: Moves left and right using the pattern {-1, 1, -1, 1, 1}
+- InteractionResult: 
+	- Will HIT the player if within three squares from player 
+	- Will KILL if on same square as the player
+- Movement: Moves away and to the player using the pattern {away, to, away, to, to}
 - Notes: Moves in a repeating sequence every turn.
 
 2. Guard
 - Extends: GamePiece
 - Implements: Moveable
-- InteractionResult: Will HIT the player if on same square as the player
-- Movement: Randomly chooses to move left or right by 1 step
+- InteractionResult: 
+	- Will HIT the player if on adjacent square to the player
+	- Will KILL if on same square as the player
+- Movement: Randomly chooses to move left or right by 1 step, or not move at all
 - Notes: Introduces luck based challenge due to random motion.
 
 3. King
 - Extends: GamePiece
 - Implements: (none)
 - InteractionResult: Will ADVANCE the player if the player lands on its location
-- Movement: Static
+- Movement: (none)
 - Notes: Reaching this piece allows the player to advance a level.
 
 4. Door
 - Extends: GamePiece
 - Implements: (none)
 - InteractionResult: Randomized with probabilites being 45% GET_POINT, 5% ADVANCE, and 55% HIT
-- Movement: Static
+- Movement: (none)
 - Notes: Interaction result chosen by weighted random probability. Can advance early if lucky enough. 
 
 5. Room
 - Extends: GamePiece
 - Implements: (none)
 - InteractionResult: Randomized with probabilites being 20% HIT, 20% GET_POINT, 5% KILL, and 55% NONE
-- Movement: Static
+- Movement: (none)
 - Notes: Interaction result chosen by weighted random probability. Can KILL if unlucky enough.
 
 6. Window
 - Implements: Drawable
-- InteractionResult: Will show a beautify W representing a wonderful, wacky, whimsical, waterproof window.
-- Movement: Static
+- InteractionResult: (none)
+- Movement: (none)
 - Notes: Surves as a decoratation. Only a visual element for players theorize about. Might be explored in the sequel.
 
 Level Setup Summary:
@@ -56,9 +60,9 @@ Requirements Completed:
 2. All required `InteractionResult` types are used:
 	- HIT used by Archer, Guard, Door, and Room
     - GET_POINT used by Door and Room
-    - KILL used by Room
+    - KILL used by Room and Guard
     - ADVANCE used by King and Door
-    - NONE (Window, Room sometimes)
+    - NONE (All GamePieces when not in range, Room sometimes when in range)
 3. At least 2 pieces implement Moveable: 
 	- Archer
 	- Guard
