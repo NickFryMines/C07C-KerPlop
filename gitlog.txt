@@ -1,0 +1,172 @@
+commit 7169a98174e14933f61557e40a5410c3d3267394
+Author: NickFGit <frync@icloud.com>
+Date:   Fri Jul 11 17:57:46 2025 -0600
+
+    specified a movement description
+
+commit f8fa2292627efcef9a572e6b6f056d0ae9259315
+Author: Wesley Montgomery <wesley_montgomery@mines.edu>
+Date:   Fri Jul 11 17:20:56 2025 -0600
+
+    Added GamePieces.txt.
+    
+    Created and uploaded GamePieces.txt.
+
+commit af69a4dbd3f4f058f4a11aa33363b1b3bb6c2098
+Author: Wesley Montgomery <wesley_montgomery@mines.edu>
+Date:   Fri Jul 11 17:19:43 2025 -0600
+
+    Added GameUML.png
+    
+    Created and uploaded GameUML.png.
+
+commit a9fb92e10666275dfbfc0ef77ce54da8af9ed4a5
+Author: Wesley Montgomery <wesley_montgomery@mines.edu>
+Date:   Fri Jul 11 17:17:42 2025 -0600
+
+    Update Window.java
+    
+    Updated comments.
+
+commit 357edda3ccabbb2f17f8f0209baa3c830252e81c
+Author: Wesley Montgomery <wesley_montgomery@mines.edu>
+Date:   Fri Jul 11 17:17:07 2025 -0600
+
+    Update Room.java
+    
+    Updated Room class to optimize probability.
+    Updated Room class probability calculations to be easier to read.
+    Updated comments.
+
+commit 043875a3450066ea64f3882e5917d40d64965b8f
+Author: Wesley Montgomery <wesley_montgomery@mines.edu>
+Date:   Fri Jul 11 17:15:48 2025 -0600
+
+    Update LevelSetup.java
+    
+    Updated comments.
+
+commit 6494f23205d1c617cda18fabef8a31806a1c5d29
+Author: Wesley Montgomery <wesley_montgomery@mines.edu>
+Date:   Fri Jul 11 17:14:00 2025 -0600
+
+    Update King.java
+    
+    Updated comments
+
+commit c27c38fcb4eac6d9eaddec472f72f3bcaa0c299b
+Author: Wesley Montgomery <wesley_montgomery@mines.edu>
+Date:   Fri Jul 11 17:13:29 2025 -0600
+
+    Update Guard.java
+    
+    Updated comments.
+
+commit 37ee5bdb5abc8ed7f7abb4d0541251314a1b66a0
+Author: Wesley Montgomery <wesley_montgomery@mines.edu>
+Date:   Fri Jul 11 17:11:23 2025 -0600
+
+    Update GamePiece.java
+    
+    Updated comments.
+
+commit 6cf49b26a0f94dc41d4bf4fb7ba85be1a6c146e6
+Author: Wesley Montgomery <wesley_montgomery@mines.edu>
+Date:   Fri Jul 11 17:10:11 2025 -0600
+
+    Update Door.java
+    
+    Updated Door class to optimize probability.
+    Updated Door class probability calculations to be easier to read.
+    Updated comments.
+
+commit d893ff19f16b491e93a168b7e0b02c90a2fb1f0a
+Author: Wesley Montgomery <wesley_montgomery@mines.edu>
+Date:   Fri Jul 11 17:08:48 2025 -0600
+
+    Update Archer.java
+    
+    Updated Archer class to not attack the player when the player is close.
+    Updated comments.
+
+commit 65f54a940601c335b32cd1041b6d3c1b40e0cd58
+Author: Wesley Montgomery <wesley_montgomery@mines.edu>
+Date:   Fri Jul 11 17:06:06 2025 -0600
+
+    Update Player.java
+    
+    Updated comments.
+
+commit c66fcb0dd3036b95039c80bf99819c42fe86b584
+Author: Wesley Montgomery <wesley_montgomery@mines.edu>
+Date:   Fri Jul 11 17:05:25 2025 -0600
+
+    Update Moveable.java
+    
+    Updated comments.
+
+commit 3fde3a3bcb3a09a55af9f32ff657314fc487c1b4
+Author: Wesley Montgomery <wesley_montgomery@mines.edu>
+Date:   Fri Jul 11 17:04:21 2025 -0600
+
+    Update InteractionResult.java
+    
+    Updated comments.
+
+commit fec84c03f8f6b89676d402e667795b7873ea1034
+Author: Wesley Montgomery <wesley_montgomery@mines.edu>
+Date:   Fri Jul 11 17:03:30 2025 -0600
+
+    Update GameEngine.java
+    
+    Updated comments.
+
+commit af867e7d243b67d27208e5daaf385360da861591
+Author: Wesley Montgomery <wesley_montgomery@mines.edu>
+Date:   Fri Jul 11 17:02:33 2025 -0600
+
+    Update Drawable.java
+    
+    Updated comments.
+
+commit 08e4f46c1e7e753f2133e3b5cd0eb29a8ad643b2
+Author: NickFGit <frync@icloud.com>
+Date:   Wed Jul 9 20:39:51 2025 -0600
+
+    implement game initial pass
+
+commit dc429787bf36c6e9c54acd7ae1a4173750cd5f9c
+Author: NickFGit <frync@icloud.com>
+Date:   Tue Jul 8 18:05:13 2025 -0600
+
+    create 3 additional game pieces; Door, King, Room
+
+commit 503aa373e870a53672c6e1862075fce8bf9a51d7
+Author: NickFGit <frync@icloud.com>
+Date:   Tue Jul 8 18:02:35 2025 -0600
+
+    actually save contents of Window and LevelSetup, oops
+
+commit 1916961893cf4eb6e6f1fef09a9f02ec949204ac
+Author: NickFGit <frync@icloud.com>
+Date:   Tue Jul 8 18:00:13 2025 -0600
+
+    add Archer and Guard that implement moveable
+
+commit d37b37783fda28e562c706824ab50bafaa20e4b8
+Author: NickFGit <frync@icloud.com>
+Date:   Tue Jul 8 17:53:16 2025 -0600
+
+    define Window that only extends drawable
+
+commit 38db9a5f3b89b87dc96648ab9a65ca47c6f1c61b
+Author: NickFGit <frync@icloud.com>
+Date:   Tue Jul 8 17:51:17 2025 -0600
+
+    add levelsetup class
+
+commit 9cd7dabe24871e9edc65252dc2d543cb9e3ddea7
+Author: NickFGit <frync@icloud.com>
+Date:   Tue Jul 8 17:50:27 2025 -0600
+
+    initial commit
