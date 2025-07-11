@@ -8,8 +8,8 @@ import gameEngine.InteractionResult;
  *  This is an abstract class because it contains an abstract 
  *  method AND an instance variable
  * 
- * @author Mark Baldwin
- * @author Cyndi Rader
+ * @author Nick Fry
+ * @author Wesley Montgomery
  *
  */
 public abstract class GamePiece implements Drawable {
@@ -76,5 +76,4 @@ public abstract class GamePiece implements Drawable {
 		return symbol + " - " + label ; 
 	}
 	
-
 }
