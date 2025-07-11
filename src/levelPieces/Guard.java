@@ -1,5 +1,12 @@
 package levelPieces;
 
+/**
+ * 
+ * @author Nick Fry
+ * @author Wesley Montgomery
+ * 
+ */
+
 import java.util.Random;
 
 import gameEngine.Drawable;
