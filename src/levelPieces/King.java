@@ -1,5 +1,12 @@
 package levelPieces;
 
+/**
+ * 
+ * @author Nick Fry
+ * @author Wesley Montgomery
+ * 
+ */
+
 import gameEngine.Drawable;
 import gameEngine.InteractionResult;
 
