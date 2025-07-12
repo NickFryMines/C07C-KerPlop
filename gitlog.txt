@@ -1,3 +1,18 @@
+commit 073fc867f03e8a4d0dff9a6ea610636cde8b4c03
+Merge: ac7430e 6be8461
+Author: NickFryMines <nick_fry@mines.edu>
+Date:   Fri Jul 11 18:46:16 2025 -0600
+
+    Merge pull request #1 from NickFryMines/unit_testing
+    
+    Unit testing
+
+commit ac7430e5c8bfe96ff1b8922b7f46bd9f6e4640b5
+Author: NickFGit <frync@icloud.com>
+Date:   Fri Jul 11 17:58:53 2025 -0600
+
+    added git log file
+
 commit 7169a98174e14933f61557e40a5410c3d3267394
 Author: NickFGit <frync@icloud.com>
 Date:   Fri Jul 11 17:57:46 2025 -0600
@@ -128,6 +143,18 @@ Date:   Fri Jul 11 17:02:33 2025 -0600
     Update Drawable.java
     
     Updated comments.
+
+commit 6be8461e6d204ee4bcdfbfae9ab3f106ac42a7f0
+Author: NickFGit <frync@icloud.com>
+Date:   Thu Jul 10 21:03:46 2025 -0600
+
+    develop interaction tests
+
+commit faf95ca8d2c82ce8ad6ac673e29d80c645b88050
+Author: NickFGit <frync@icloud.com>
+Date:   Thu Jul 10 20:32:02 2025 -0600
+
+    develop movement tests
 
 commit 08e4f46c1e7e753f2133e3b5cd0eb29a8ad643b2
 Author: NickFGit <frync@icloud.com>
