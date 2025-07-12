@@ -13,8 +13,8 @@ import java.util.Map;
 import java.util.Random;
 
 public class Door extends GamePiece {
-	private static final Map<InteractionResult, Integer> WEIGHTED_INTERACTION_PROBABILITY = Map.of(InteractionResult.ADVANCE, 5, InteractionResult.GET_POINT, 45, InteractionResult.HIT, 55);
-	private static final int TOTAL_INTERACTION_PROBABILITY = WEIGHTED_INTERACTION_PROBABILITY.values().stream().mapToInt(Integer::intValue).sum();
+	public static final Map<InteractionResult, Integer> WEIGHTED_INTERACTION_PROBABILITY = Map.of(InteractionResult.ADVANCE, 5, InteractionResult.GET_POINT, 45, InteractionResult.HIT, 55);
+	public static final int TOTAL_INTERACTION_PROBABILITY = WEIGHTED_INTERACTION_PROBABILITY.values().stream().mapToInt(Integer::intValue).sum();
 	private Random randomGenerator = new Random();
 
 	public Door(int location) {
